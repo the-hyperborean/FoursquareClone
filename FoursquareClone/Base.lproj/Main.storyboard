@@ -95,11 +95,70 @@
                         <outlet property="tableView" destination="SxA-eH-0ho" id="ZZ8-nJ-vDQ"/>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="toSignUpVC" modalPresentationStyle="fullScreen" id="8P7-M6-JKp"/>
                         <segue destination="aZt-a1-V1b" kind="show" identifier="toAddPlaceVC" id="EIv-PO-cpM"/>
+                        <segue destination="lVj-Vv-pNa" kind="show" identifier="toDetailsVC" id="Z2j-Kw-gYS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aCO-C4-Wtt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2247.826086956522" y="114.50892857142857"/>
+        </scene>
+        <!--DetailsVC-->
+        <scene sceneID="oVZ-af-LFq">
+            <objects>
+                <viewController id="lVj-Vv-pNa" customClass="DetailsVC" customModule="FoursquareClone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ij8-DQ-7hE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hk8-3n-rTa">
+                                <rect key="frame" x="0.0" y="88" width="414" height="269"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="placeNameLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EKc-4J-js9">
+                                <rect key="frame" x="92" y="370" width="231" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="placeTypeLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gg3-ai-naj">
+                                <rect key="frame" x="92" y="432" width="231" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="placeDescriptionLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fOP-ae-Aj9">
+                                <rect key="frame" x="92" y="500" width="231" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="nrn-G7-9zU">
+                                <rect key="frame" x="0.0" y="560" width="414" height="336"/>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="HRY-5a-cFe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hk8-3n-rTa" firstAttribute="leading" secondItem="HRY-5a-cFe" secondAttribute="leading" id="0cB-Wy-nKO"/>
+                            <constraint firstItem="HRY-5a-cFe" firstAttribute="trailing" secondItem="hk8-3n-rTa" secondAttribute="trailing" id="DY7-8n-79U"/>
+                            <constraint firstItem="nrn-G7-9zU" firstAttribute="leading" secondItem="HRY-5a-cFe" secondAttribute="leading" id="G20-bb-06G"/>
+                            <constraint firstItem="HRY-5a-cFe" firstAttribute="trailing" secondItem="nrn-G7-9zU" secondAttribute="trailing" id="HHh-CX-7pW"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Pm6-CS-XBf"/>
+                    <connections>
+                        <outlet property="detailsDescriptionLabel" destination="fOP-ae-Aj9" id="SyK-bJ-J3R"/>
+                        <outlet property="detailsImageView" destination="hk8-3n-rTa" id="J6S-tZ-JtK"/>
+                        <outlet property="detailsMapView" destination="nrn-G7-9zU" id="Iez-Rc-ETz"/>
+                        <outlet property="detailsNameLabel" destination="EKc-4J-js9" id="4Wc-ru-jIy"/>
+                        <outlet property="detailsTypeLabel" destination="gg3-ai-naj" id="5Kl-D9-JGE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="muE-di-LSx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3350.7246376811595" y="840.40178571428567"/>
         </scene>
         <!--Add PlaceVC-->
         <scene sceneID="9HA-RW-EQc">
