@@ -17,6 +17,7 @@
 		6601253B259AD1F400E28DC3 /* AddPlaceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6601253A259AD1F400E28DC3 /* AddPlaceVC.swift */; };
 		6601253F259AD71E00E28DC3 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6601253E259AD71E00E28DC3 /* MapVC.swift */; };
 		66012543259AE12900E28DC3 /* DetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66012542259AE12900E28DC3 /* DetailsVC.swift */; };
+		66012547259AEC4C00E28DC3 /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66012546259AEC4C00E28DC3 /* PlaceModel.swift */; };
 		E20415A2A3D2F167B8501919 /* Pods_FoursquareClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43B094528BB04A569C5BA627 /* Pods_FoursquareClone.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		6601253A259AD1F400E28DC3 /* AddPlaceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlaceVC.swift; sourceTree = "<group>"; };
 		6601253E259AD71E00E28DC3 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
 		66012542259AE12900E28DC3 /* DetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsVC.swift; sourceTree = "<group>"; };
+		66012546259AEC4C00E28DC3 /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
 		A2B931818C4F00AA6DBB2FDF /* Pods-FoursquareClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoursquareClone.debug.xcconfig"; path = "Target Support Files/Pods-FoursquareClone/Pods-FoursquareClone.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,6 +80,7 @@
 				66012542259AE12900E28DC3 /* DetailsVC.swift */,
 				6601253A259AD1F400E28DC3 /* AddPlaceVC.swift */,
 				6601253E259AD71E00E28DC3 /* MapVC.swift */,
+				66012546259AEC4C00E28DC3 /* PlaceModel.swift */,
 				660125202596BAAC00E28DC3 /* Main.storyboard */,
 				660125232596BAAC00E28DC3 /* Assets.xcassets */,
 				660125252596BAAC00E28DC3 /* LaunchScreen.storyboard */,
@@ -218,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6601251F2596BAAB00E28DC3 /* SignUpVC.swift in Sources */,
+				66012547259AEC4C00E28DC3 /* PlaceModel.swift in Sources */,
 				6601253F259AD71E00E28DC3 /* MapVC.swift in Sources */,
 				6601251B2596BAAB00E28DC3 /* AppDelegate.swift in Sources */,
 				660125362599909600E28DC3 /* PlacesVC.swift in Sources */,
