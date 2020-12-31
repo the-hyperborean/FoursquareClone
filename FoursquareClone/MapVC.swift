@@ -49,8 +49,8 @@ class MapVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
             
             self.mapView.addAnnotation(annotation)
             
-            PlaceModel.sharedInstance.placeLongitude = String(coordinates.latitude)
-            PlaceModel.sharedInstance.placeLatitude = String(coordinates.longitude)
+            PlaceModel.sharedInstance.placeLatitude = String(coordinates.latitude)
+            PlaceModel.sharedInstance.placeLongitude = String(coordinates.longitude)
             
         }
         
